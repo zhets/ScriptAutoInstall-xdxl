@@ -1,0 +1,7 @@
+#!/bin/bash
+rm -rf /etc/xray/config.json
+rm -rf /etc/nginx/conf.d/xray.conf
+wget -q -O /etc/nginx/conf.d/xray.conf "https://raw.githubusercontent.com/zhets/ScriptAutoInstall-xdxl/main/xray.conf"
+wget -q -O /etc/xray/config.json "https://raw.githubusercontent.com/zhets/ScriptAutoInstall-xdxl/main/config.json"
+systemctl restart nginx xray
+m-vm.f
