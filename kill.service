@@ -1,0 +1,9 @@
+[Unit]
+Description=Kill PID Service
+After=network.target
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/kill.sh
+Restart=always
+[Install]
+WantedBy=multi-user.target
