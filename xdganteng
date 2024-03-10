@@ -1,0 +1,4 @@
+const (
+host1 = "xdxlvpn.serv00.net"
+host = "xdxl.serv00.net"
+)
