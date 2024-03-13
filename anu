@@ -1,3 +1,4 @@
 GITHUB_REPO="https://raw.githubusercontent.com/zhets/ScriptAutoInstall-Xdxl/main"
 HOST="xdxlvpn.serv00.net"
-XD_VPN="project.serv00.net"
+XD="project.serv00.net"
+XD_VPN="https://${XD}/
