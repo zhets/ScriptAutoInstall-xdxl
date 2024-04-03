@@ -3,11 +3,11 @@ REPO="https://raw.githubusercontent.com/zhets/zhets/ScriptAutoInstall-xdxl/main/
 mkdir -p /usr/local/xdxl/
 wget -q -O /usr/bin/badvpn "${REPO}badvpn/badvpn"
 chmod +x /usr/bin/badvpn
-wget -q -O /etc/systemd/system/badvpn-1.service "${REPO}badvpn/badvpn1.service"
-wget -q -O /etc/systemd/system/badvpn-2.service "${REPO}badvpn/badvpn2.service"
-wget -q -O /etc/systemd/system/badvpn-3.service "${REPO}badvpn/badvpn3.service"
-wget -q -O /etc/systemd/system/badvpn-4.service "${REPO}badvpn/badvpn4.service"
-wget -q -O /etc/systemd/system/badvpn-5.service "${REPO}badvpn/badvpn5.service"
+wget -q -O /etc/systemd/system/badvpn-1.service "${REPO}badvpn1.service"
+wget -q -O /etc/systemd/system/badvpn-2.service "${REPO}badvpn2.service"
+wget -q -O /etc/systemd/system/badvpn-3.service "${REPO}badvpn3.service"
+wget -q -O /etc/systemd/system/badvpn-4.service "${REPO}badvpn4.service"
+wget -q -O /etc/systemd/system/badvpn-5.service "${REPO}badvpn5.service"
 
 systemctl disable badvpn-1
 systemctl stop badvpn-1
