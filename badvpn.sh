@@ -1,5 +1,5 @@
 #!/bin/bash
-REPO="https://raw.githubusercontent.com/zhets/zhets/ScriptAutoInstall-xdxl/main/"
+REPO="https://github.com/zhets/ScriptAutoInstall-xdxl/raw/main/"
 wget -q -O /usr/bin/badvpn "${REPO}badvpn" && chmod +x /usr/bin/badvpn
 wget -q -O /etc/systemd/system/badvpn-1.service "${REPO}badvpn1.service"
 wget -q -O /etc/systemd/system/badvpn-2.service "${REPO}badvpn2.service"
